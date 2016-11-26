@@ -1,0 +1,33 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./bin/start.js",
+    "test": "mocha --timeout 10000"
+  },
+  "bin":{
+    "start": "./bin/start"
+  },
+  "keywords": [],
+  "author": "enovz",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "1.1.3",
+    "commander": "2.9.0",
+    "figlet": "1.2.0",
+    "fs": "0.0.1-security",
+    "mongoose": "4.6.8",
+    "path": "0.12.7",
+    "restify": "4.3.0",
+    "restify-router": "0.2.1",
+    "settings": "0.1.1"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chai-http": "3.0.0",
+    "mocha": "3.1.2",
+    "nodemon": "1.11.0"
+  }
+}
