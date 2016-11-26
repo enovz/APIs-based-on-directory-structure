@@ -10,9 +10,9 @@ The dogs resource is defined by:
                                 2. actions (array of allowed actions dogs resource)
                                 3. a controller (the controller defines implemetations of actions from the actions array)
 
-1.model is a plain mongoose model
+1. model is a plain mongoose model
 
-2.actions:
+2. actions:
           2.1. actions is an array of actions allowed on the resource
           2.2. an action is defined as an object that describes an action:
                     {
