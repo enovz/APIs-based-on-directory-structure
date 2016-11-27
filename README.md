@@ -120,7 +120,8 @@ The difference in nested routes is in controller behaviour parameters.
 ```
 The resources object descibes the requested resource.
 
- ```resources {
+ ```
+     resources {
                 user:{
                         id: req.params.user-id
                 },  
