@@ -4,14 +4,9 @@
 
 Attempt of automating API routes generation based on lib/api/resources directory structure. Needs a lot of work and love.
 
-
-## Creating routes
-
-In the api/resources directory every directory is treated as an API resource(route).
-
 ##Code Example
 
-In the api/resources directory every directory(resource) is treated as an API route.
+In the lib/api/resources directory every directory(resource) is treated as an API route.
 
 * /api
   * /resources
