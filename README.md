@@ -1,35 +1,43 @@
 # APIs-based-on-directory-structure
 
-Attempt of automating API routes generation based on lib/api/resources directory structure.
+Synopsis
 
-The idea was to have a fast setup for working on one resource at a time. Each directory (resource) in the api/lib/resources directory is treated as a route. 
+Attempt of automating API routes generation based on lib/api/resources directory structure. Needs a lot of work and love.
 
-For instance the api/lib/resources/dogs directory is treated as a dogs resource of an API.
-The dogs resource is defined by:
-                                1. a model of Dog (mongoose model).
-                                2. actions (array of allowed actions dogs resource)
-                                3. a controller (the controller defines implemetations of actions from the actions array)
+Code Example
 
-1. model is a plain mongoose model
+In the api/resources directory every directory(resource) is treated as an API route.
 
-2. actions:
-          2.1. actions is an array of actions allowed on the resource
-          2.2. an action is defined as an object that describes an action:
-                    {
-                      method: "get",
-                      parameter: "",
-                      func: "getAll"
-                    },
-                    {
-                      method: "get",
-                      parameter: "/:id",
-                      func: "getById"
-                    }
-          2.3. method of action is a http verb (since a resource is provided depending on the reqest verb type)
-          2.4. parameter of action is an empty string or an ":id" (since every action needs data to respond with data, except getAll)
-          2.5. func is a function responsible for executing the requested action (controller function)
+-api
+  -resources
+    -dogs
 
-3.controller:
-          3.1. defines methods that execute on a given resource
-          3.2. method names are same as action func (the controller and actions are linked)
+Results in generation of a route like: api/dogs
+
+
+
+Motivation
+
+A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
+
+Installation
+
+Provide code examples and explanations of how to get the project.
+
+API Reference
+
+Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+
+Tests
+
+Describe and show how to run the tests with code examples.
+
+Contributors
+
+Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+
+License
+
+A short snippet describing the license (MIT, Apache, etc.)
+
           
