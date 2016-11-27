@@ -9,8 +9,8 @@ Code Example
 In the api/resources directory every directory(resource) is treated as an API route.
 
 * /api
-  */resources
-    */dogs
+  * /resources
+    * /dogs
 
 Results in generation of a route like: api/dogs
 
