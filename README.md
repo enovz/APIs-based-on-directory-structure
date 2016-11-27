@@ -57,7 +57,8 @@ Results in generation of endpoints:
 
 2. Controller behaviour defines implemetations of functions that need to be executed when a action is requested. 
 
-```getAll() {
+```
+    getAll() {
         return "get all dogs called";
     }
     getById(dogs) {
@@ -67,13 +68,14 @@ Results in generation of endpoints:
 
 The dogs object descibes the resource requested:
 
-```dogs:{
+```
+    dogs:{
           id: req.params.id,
           data: {
                   name: body.name             
                 }        
         }
-
+```
 ## Nesting routes
 
 Nesting routes is simple as creating a new directory named after a resource which we operate on.
