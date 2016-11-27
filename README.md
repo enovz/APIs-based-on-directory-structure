@@ -85,9 +85,9 @@ Nesting routes is simple as creating a new directory named after a resource whic
     * /users
       * /dogs
 
-Results in generation of routes: 
-1. api/users 
-2. api/users/:users-id/dogs
+Results in generation of routes 
+1.api/users 
+2.api/users/:users-id/dogs
 
 
 The api/users/:users-id/dogs route also needs a controller and a model for handeling endpoints. 
@@ -110,7 +110,8 @@ Define actions in the controller :
 ```
 The difference in nested routes is in controller behaviour parameters.
 
-``` create(resources) {
+``` 
+    create(resources) {
         return " user: " + resources.users.id + " called create dog with data: " + resources.dogs.data.name;
     }
     getById(resources) {
