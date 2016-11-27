@@ -19,8 +19,9 @@ The route needs to offer methods that manipulate the resource in context. So eve
 -Model is a model of resource we are operating on (api/dogs -> Dog.js). 
 
 -Controllers have 2 sections :
-1. controller actions
-2. contrller behaviour 
+
+* controller actions
+* contrller behaviour 
 
 1. Controllers actions is an array of actions that can be preformed on a route. These actions get binded with the resource route to form API endpoints.
 
