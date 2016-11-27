@@ -53,7 +53,7 @@ Results in generation of endpoints:
 
 
 
-2. Controller behaviour defines implemetations of functions that need to be executed when a action is requested. 
+2. Controller behaviour defines implemetations of functions that need to be executed when an action is requested. 
 
 ```
     getAll() {
