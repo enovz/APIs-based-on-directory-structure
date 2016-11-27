@@ -1,5 +1,6 @@
 # APIs-based-on-directory-structure
 
+<<<<<<< HEAD
 
 ## Synopsis
 
@@ -10,6 +11,15 @@ Attempt of automating API routes generation based on lib/api/resources directory
 ## Creating routes
 
 In the api/resources directory every directory is treated as an API resource(route).
+=======
+Synopsis
+
+Attempt of automating API routes generation based on lib/api/resources directory structure. Needs a lot of work and love.
+
+Code Example
+
+In the api/resources directory every directory(resource) is treated as an API route.
+>>>>>>> 626344742c237827eef138d70068e55d02d7eaa0
 
 * /api
   * /resources
@@ -17,6 +27,7 @@ In the api/resources directory every directory is treated as an API resource(rou
 
 Results in generation of a route like: api/dogs
 
+<<<<<<< HEAD
 The route needs to offer methods that manipulate the resource in context. So every resource dir has a Model and a Controller.
 
 -Model is a model of resource we are operating on (api/dogs -> Dog.js). 
@@ -151,5 +162,33 @@ Whit a schema we can refactor and refine the idea an implemetations of the idea.
 
 
 
+=======
+
+
+
+Motivation
+
+A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
+
+Installation
+
+Provide code examples and explanations of how to get the project.
+
+API Reference
+
+Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+
+Tests
+
+Describe and show how to run the tests with code examples.
+
+Contributors
+
+Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+
+License
+
+A short snippet describing the license (MIT, Apache, etc.)
+>>>>>>> 626344742c237827eef138d70068e55d02d7eaa0
 
           
