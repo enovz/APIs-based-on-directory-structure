@@ -7,9 +7,10 @@ Attempt of automating API routes generation based on lib/api/resources directory
 Code Example
 
 In the api/resources directory every directory(resource) is treated as an API route.
-*api
-*resources
-*dogs
+
+-api
+  -resources
+    -dogs
 
 Results in generation of a route like: api/dogs
 
