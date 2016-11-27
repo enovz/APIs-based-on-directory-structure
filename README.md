@@ -147,7 +147,7 @@ Middlewears are defined in the lib/api/middlewear directory.
 Common middlewears are defined in the lib/api/middlewear/common directory
 
 * in the common directory we define common middlewears
-* require the wanted middlewear in the index.js and it will be run on every route
+* require the wanted middlewear in the api/lib/middlewear/index.js and it will be run on every route
 
 ### Motivation
 
@@ -155,7 +155,7 @@ Common middlewears are defined in the lib/api/middlewear/common directory
 create a folder named afrer a route/resource and give it a controller and middlewear.
 
 * Itention is not to create an API in this way, but simply to go from an idea of a API to a rough schema of the service.
-Whit a schema we can refactor and refine the idea an implemetations of the idea.   
+With a schema we can refactor and refine the idea an implemetations of the idea.   
 
 
           
