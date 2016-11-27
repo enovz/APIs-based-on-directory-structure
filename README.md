@@ -86,9 +86,9 @@ Nesting routes is simple as creating a new directory named after a resource whic
       * /dogs
 
 Results in generation of routes 
-1.api/users 
-2.api/users/:users-id/dogs
 
+* api/users 
+* api/users/:users-id/dogs
 
 The api/users/:users-id/dogs route also needs a controller and a model for handeling endpoints. 
 
