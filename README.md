@@ -45,11 +45,13 @@ The route needs to offer methods that manipulate the resource in context. So eve
 ```
 
 An action is defined by:
+
 * method that is invoking the action
 * parameter that a route accepts (same parameter is passed to the controller behaviour)
 * func that handles logic for the endpoint
 
 Results in generation of endpoints:
+
 1. server.get(api/dogs) => handled by func getAll
 2. server.get(api/dogs/:id) => handled by func getById
 
