@@ -52,8 +52,8 @@ An action is defined by:
 
 Results in generation of endpoints:
 
-1. server.get(api/dogs) => handled by func getAll
-2. server.get(api/dogs/:id) => handled by func getById
+* server.get(api/dogs) => handled by func getAll
+* server.get(api/dogs/:id) => handled by func getById
 
 
 
