@@ -22,14 +22,5 @@ module.exports = {
                 url: 'mongodb://localhost/mockingbird'
             }
         }
-    },
-     "dev": {
-            server: {
-                name: 'API server',
-                port: 8080
-            },
-            databse: {
-                url: 'mongodb://localhost/realdeal'
-            }
-        },
+    }
 }
