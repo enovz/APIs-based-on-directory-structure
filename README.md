@@ -53,14 +53,15 @@ Results in generation of endpoints:
 
 
 
-2. Controller behaviour defines implemetations of functions that need to be executed when an action is requested. 
+2. Controller behaviour defines implemetations of functions that need to be executed when an action is requested.
+* controller behaviours consume a resource object(if not empty) and respond with a response callback. 
 
 ```
-    getAll() {
-        return "get all dogs called";
+    getAll(dogs, response) {
+        response("get all dogs called");
     }
-    getById(dogs) {
-        return "getById called " + dogs.id;
+    getById(dogs, response) {
+       response("getById called " + dogs.id);
     }
 ```
 
@@ -109,11 +110,11 @@ Define actions in the controller :
 The difference in nested routes is in controller behaviour parameters.
 
 ``` 
-    create(resources) {
-        return " user: " + resources.users.id + " called create dog with data: " + resources.dogs.data.name;
+    create(resources, response) {
+        response(" user: " + resources.users.id + " called create dog with data: " + resources.dogs.data.name);
     }
-    getById(resources) {
-        return " user: " + resources.users.id + " called getById on dogs id : " + resources.dogs.id;
+    getById(resources, response) {
+        response(" user: " + resources.users.id + " called getById on dogs id : " + resources.dogs.id);
     }
 ```
 The resources object descibes the requested resource.
@@ -144,8 +145,8 @@ Middlewears are defined in the lib/api/middlewear directory.
 
 Common middlewears are defined in the lib/api/middlewear/common directory
 
-* in the common directory we define common middlewears
-* require the wanted middlewear in the api/lib/middlewear/index.js and it will be run on every route
+* in the common directory we define middlewears that are common to all endpoints on a certan route
+* require the wanted middlewear in the api/lib/middlewear/index.js, add it to the middlewear object and it will be run on every endpoint
 
 ### Motivation
 
