@@ -156,9 +156,10 @@ create a folder named after a route/resource and give it a controller and middle
 * Intention is not to create an API in this way, but simply to go from an idea of a API to a rough schema of the service.
 With a schema we can refactor and refine the idea an implemetations of the idea.   
 
-##Installation
+##Instalation
 
 * download
-* npm install 
+* npm install
+* create resource dirs, controllers, middlewears
 * npm start
           
