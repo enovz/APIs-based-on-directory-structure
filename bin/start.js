@@ -10,7 +10,7 @@ process.env.NODE_ENV = process.env.NODE_ENV ||  'dev';
 var ENV = process.env.NODE_ENV;
 
 app.start();
-console.log("Server listening on port: " + color.info(app.app_server.port));
+console.log("Server listening on port: " + color.info(app.appServer.port));
 
 /*const program = require('commander');
 const pkg = require('../package.json');
