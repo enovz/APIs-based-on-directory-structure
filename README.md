@@ -145,7 +145,7 @@ Middlewears are defined in the lib/api/middlewear directory.
 
 Common middlewears are defined in the lib/api/middlewear/common directory
 
-* in the common directory we define middlewears that are common to all endpoints on a certan route
+* in the common directory we define middlewears that are common to all endpoints 
 * require the wanted middlewear in the api/lib/middlewear/index.js, add it to the middlewear object and it will be run on every endpoint
 
 ### Motivation
